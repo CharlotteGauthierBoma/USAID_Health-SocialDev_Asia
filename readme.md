@@ -15,7 +15,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -24,22 +23,23 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## The Project : 📊 USAID Health Aid Analysis Dashboard
+A Power BI dashboard exploring health sector funding by USAID in Asia (2011–2021), combined with social development indicators to uncover regional trends and gender disparities.
 
 In 2025, the U.S. government dismantled a federal agency that was responsible for nearly 50% of the world’s humanitarian aid. That agency, USAID (U.S. Agency for International Development), had long been the largest global donor of humanitarian assistance, contributing billions of dollars each year to development efforts in sectors such as health, defense, and the economy.
 
-This dashboard focuses on USAID's health sector funding in Asia over a 10-year span (2011 to 2021). It also presents social development indicators for the countries that received this aid. Key trends highlighted in the dashboard include:
+Key trends highlighted in the dashboard include:
 - Across the 2011-2021 period, women in recipient countries earned, on average, only about 50% of what men earned. (GNP per capita)
 - From 2011 to 2021, there was a gradual decline in funding, interrupted only by a temporary rebound in 2017
 - Although Afghanistan was the top recipient of funding during the period, its development indicators remain the poorest among all beneficiary countries, with particularly low life expectancy and the highest maternal mortality rate.
 
-
+![Dashboard Screenshot](image/dashboard.png)
 
 ### Built With
 
-The dashboard was fully created thanks to Microsoft Power BI Desktop. The canvas was made with Powerpoint, I saved the powerpoint slide an image ".svg" to be then uploaded in the background of the dashboard.
+The dashboard was entirely built using Microsoft Power BI Desktop.
 
-* [![PowerBI][PowerBI]][Next-url]
+ <!-- [![PowerBI][PowerBI]][Next-url]ABOUT THE PROJECT -->
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -47,27 +47,26 @@ The dashboard was fully created thanks to Microsoft Power BI Desktop. The canvas
 
 
 <!-- GETTING STARTED -->
-## Getting Started
-
-The most important is to download all csv files in a specific location (local or hosted online), then in the power query go to Source settings of each file and change the source to your new location of file.
+## 🚀 Getting Started
+1. Install [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) on your computer
+2. Download all CSV files to a local or online location
+3. In Power BI, open the dashboard and update each file's source path in the Power Query Editor
 
 ### Prerequisites
 
-To use the dashboard, Microsoft Power BI Desktop must be installed on your computer.
-
+To view and interact with the dashboard, you must have Microsoft Power BI Desktop installed on your computer.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The dashboard can be used to report fundings and social development indicators from other regions. To do so, go to "Transform data" and for each table change the filtered row step to change the filter to the continent wanted.
+ All usages :
+- Custom continent filter to reuse the dashboard for other regions
+- Interactive exploration of USAID health funding by country and year
+- Comparison of male vs. female GNP per capita
+- Analysis of life expectancy and maternal mortality in recipient countries
+- Analysis of mean years of school and adolescent birth rate in recipient countries
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+The dashboard can be adapted to display funding and social development indicators for other regions. To do this, open the pbix and go to the "Transform data" section and, for each table, modify the filtered row step to apply the desired continent filter.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +75,7 @@ Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Charlotte Gauthier Boma - [@your_linkedin](https://www.linkedin.com/in/charlotte-gauthier-boma-9a4644a9/) 
+- [@linkedin_Charlotte Gauthier Boma](https://www.linkedin.com/in/charlotte-gauthier-boma-9a4644a9/) 
 
 Project Link: [https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia](https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia)
 
@@ -87,7 +86,7 @@ Project Link: [https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_A
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Sources that have been very helpful !
 
 * [Chaîne Youtube How to Power BI](https://www.youtube.com/watch?v=v6fP8gyCLLc)
 
