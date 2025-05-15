@@ -48,13 +48,12 @@ The dashboard was entirely built using Microsoft Power BI Desktop.
 
 <!-- GETTING STARTED -->
 ## 🚀 Getting Started
-1. Install [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) on your computer
-2. Download all CSV files to a local or online location
-3. In Power BI, open the dashboard and update each file's source path in the Power Query Editor
+1. Download all CSV files to a local or online location
+2. In Power BI, open the dashboard and update each file's source path in the Power Query Editor
 
 ### Prerequisites
 
-To view and interact with the dashboard, you must have Microsoft Power BI Desktop installed on your computer.
+To view and interact with the dashboard, you must have Microsoft Power BI Desktop [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) installed on your computer.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -77,7 +76,7 @@ The dashboard can be adapted to display funding and social development indicator
 
 - [@linkedin_Charlotte Gauthier Boma](https://www.linkedin.com/in/charlotte-gauthier-boma-9a4644a9/) 
 
-Project Link: [https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia](https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia)
+- Project Link: [https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia](https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
