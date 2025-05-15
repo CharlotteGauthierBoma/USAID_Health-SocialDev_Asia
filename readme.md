@@ -1,90 +1,101 @@
-# Population density - Data package
-
-This data package contains the data that powers the chart ["Population density"](https://ourworldindata.org/grapher/population-density?tab=table&time=1942..2021&v=1&csvType=filtered&useColumnShortNames=false) on the Our World in Data website. It was downloaded on April 27, 2025.
-
-### Active Filters
-
-A filtered subset of the full data was downloaded. The following filters were applied:
-country: 
-tab: table
-time: 1942..2021
-
-## CSV Structure
-
-The high level structure of the CSV file is that each row is an observation for an entity (usually a country or region) and a timepoint (usually a year).
-
-The first two columns in the CSV file are "Entity" and "Code". "Entity" is the name of the entity (e.g. "United States"). "Code" is the OWID internal entity code that we use if the entity is a country or region. For normal countries, this is the same as the [iso alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) code of the entity (e.g. "USA") - for non-standard countries like historical countries these are custom codes.
-
-The third column is either "Year" or "Day". If the data is annual, this is "Year" and contains only the year as an integer. If the column is "Day", the column contains a date string in the form "YYYY-MM-DD".
-
-The final column is the data column, which is the time series that powers the chart. If the CSV data is downloaded using the "full data" option, then the column corresponds to the time series below. If the CSV data is downloaded using the "only selected data visible in the chart" option then the data column is transformed depending on the chart type and thus the association with the time series might not be as straightforward.
-
-## Metadata.json structure
-
-The .metadata.json file contains metadata about the data package. The "charts" key contains information to recreate the chart, like the title, subtitle etc.. The "columns" key contains information about each of the columns in the csv, like the unit, timespan covered, citation for the data etc..
-
-## About the data
-
-Our World in Data is almost never the original producer of the data - almost all of the data we use has been compiled by others. If you want to re-use data, it is your responsibility to ensure that you adhere to the sources' license and to credit them correctly. Please note that a single time series may have more than one source - e.g. when we stich together data from different time periods by different producers or when we calculate per capita metrics using population data from a second source.
-
-## Detailed information about the data
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
 
-## Population density
-Population per square kilometer by country, available from 10,000 BCE to 2100, based on data and estimates from different sources.
 
-Last updated: July 15, 2024  
-Next update: July 2026  
-Date range: 10000 BCE – 2100 CE  
-Unit: people per km²  
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
+In 2025, the U.S. government dismantled a federal agency that was responsible for nearly 50% of the world’s humanitarian aid. That agency, USAID (U.S. Agency for International Development), had long been the largest global donor of humanitarian assistance, contributing billions of dollars each year to development efforts in sectors such as health, defense, and the economy.
 
-### How to cite this data
-
-#### In-line citation
-If you have limited space (e.g. in data visualizations), you can use this abbreviated in-line citation:  
-HYDE (2023); Gapminder (2022); UN WPP (2024); UN FAO (2024) – with major processing by Our World in Data
-
-#### Full citation
-HYDE (2023); Gapminder (2022); UN WPP (2024); UN FAO (2024) – with major processing by Our World in Data. “Population density” [dataset]. PBL Netherlands Environmental Assessment Agency, “History Database of the Global Environment 3.3”; Gapminder, “Population v7”; United Nations, “World Population Prospects”; Gapminder, “Systema Globalis”; Food and Agriculture Organization of the United Nations, “Land, Inputs and Sustainability: Land Use” [original data].
-Source: HYDE (2023); Gapminder (2022); UN WPP (2024); UN FAO (2024) – with major processing by Our World In Data
-
-### Sources
-
-#### PBL Netherlands Environmental Assessment Agency – History Database of the Global Environment
-Retrieved on: 2024-01-02  
-Retrieved from: https://doi.org/10.24416/UU01-AEZZIT  
-
-#### Gapminder – Population
-Retrieved on: 2023-03-31  
-Retrieved from: http://gapm.io/dpop  
-
-#### United Nations – World Population Prospects
-Retrieved on: 2024-07-11  
-Retrieved from: https://population.un.org/wpp/Download/  
-
-#### Gapminder – Systema Globalis
-Retrieved on: 2023-03-31  
-Retrieved from: https://github.com/open-numbers/ddf--gapminder--systema_globalis  
-
-#### Food and Agriculture Organization of the United Nations – Land, Inputs and Sustainability: Land Use
-Retrieved on: 2024-03-14  
-Retrieved from: http://www.fao.org/faostat/en/#data/RL  
-
-#### Notes on our processing step for this indicator
-We have estimated the population density by using population estimates from multiple sources and land area estimates by the Food and Agriculture Organization of the United Nations.
-
-We obtain it by dividing the population estimates by the land area estimates.
-
-The population data is constructed by combining data from multiple sources:
-
-- 10,000 BCE - 1799: Historical estimates by HYDE (v3.3).
-
-- 1800 - 1949: Historical estimates by Gapminder (v7).
-
-- 1950-2023: Population records by the UN World Population Prospects (2024 revision).
-
-- 2024-2100: Projections based on Medium variant by the UN World Population Prospects (2024 revision).
+This dashboard focuses on USAID's health sector funding in Asia over a 10-year span (2011 to 2021). It also presents social development indicators for the countries that received this aid. Key trends highlighted in the dashboard include:
+- Across the 2011-2021 period, women in recipient countries earned, on average, only about 50% of what men earned. (GNP per capita)
+- From 2011 to 2021, there was a gradual decline in funding, interrupted only by a temporary rebound in 2017
+- Although Afghanistan was the top recipient of funding during the period, its development indicators remain the poorest among all beneficiary countries, with particularly low life expectancy and the highest maternal mortality rate.
 
 
-    
+
+### Built With
+
+The dashboard was fully created thanks to Microsoft Power BI Desktop. The canvas was made with Powerpoint, I saved the powerpoint slide an image ".svg" to be then uploaded in the background of the dashboard.
+
+* [![PowerBI][PowerBI]][Next-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+The most important is to download all csv files in a specific location (local or hosted online), then in the power query go to Source settings of each file and change the source to your new location of file.
+
+### Prerequisites
+
+To use the dashboard, Microsoft Power BI Desktop must be installed on your computer.
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+The dashboard can be used to report fundings and social development indicators from other regions. To do so, go to "Transform data" and for each table change the filtered row step to change the filter to the continent wanted.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Charlotte Gauthier Boma - [@your_linkedin](https://www.linkedin.com/in/charlotte-gauthier-boma-9a4644a9/) 
+
+Project Link: [https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia](https://github.com/CharlotteGauthierBoma/USAID_Health-SocialDev_Asia)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Chaîne Youtube How to Power BI](https://www.youtube.com/watch?v=v6fP8gyCLLc)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[PowerBI]: https://logos-marcas.com/wp-content/uploads/2022/01/Power-BI-Emblema.jpg
+[Next-url]:https://logos-marcas.com/wp-content/uploads/2022/01/Power-BI-Emblema.jpg
